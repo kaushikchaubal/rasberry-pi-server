@@ -19,3 +19,7 @@ task wrapper(type: Wrapper) {
 }	
 
 task stage(dependsOn: ['clean', 'installApp'])
+
+jar {
+  destinationDir = file('jar')
+}
