@@ -1,7 +1,7 @@
 This project is built using an array of different technologies:
-- Running on Rasberry Pi (to be done)
-- Resin (to be done)
-- Docker (to be done)
+- Rasberry Pi 
+- Resin 
+- Docker
 - Gradle
 - NanoHTTP
 - Angular
