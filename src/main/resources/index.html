@@ -1,61 +1,376 @@
-<html>
-	<header>
+<!DOCTYPE html>
+<html lang="en">
 
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="">
-		<meta name="author" content="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-		<title>Finance Simplified</title>
-		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
-		<link rel='stylesheet' href='bower_components/jquery-ui/themes/smoothness/jquery-ui.css'/>
-		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-		<link rel="stylesheet" href="app/styles/navbar.css"/>
-	</header>
+    <title>Let us Hack</title>
 
-	<body ng-app="finance-simplified">
-		<div class="container">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-			<!-- Static navbar -->
-			<div class="navbar navbar-default" role="navigation">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="#/">Finance Simplified</a>
-					</div>
-					<div class="navbar-collapse collapse">
-						<ul class="nav navbar-nav">
-							<li><a href="#/categories">Categories</a></li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#/">About</a></li>
-							<li><a href="#/">References</a></li>
-							<li><a href="http://uk.linkedin.com/pub/kaushik-chaubal/17/314/120/">Connect</a></li>
-						</ul>
-					</div><!--/.nav-collapse -->
-				</div><!--/.container-fluid -->
-			</div>
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="color/default.css" rel="stylesheet">
 
-			<div ng-view=""></div>
-	  	</div> <!-- /container -->
+</head>
 
-	  	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	  	<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
-	  	<script src="bower_components/highcharts/highcharts.js"></script>
-	  	<script src="bower_components/angular/angular.js"></script>
-	  	<script src="bower_components/angular-route/angular-route.js"></script>	
-	    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="load"></div>
+    </div>
 
-	    <script src="app/scripts/app.js"></script>
-	    <script src="app/scripts/main.js"></script>	
-	    <script src="app/scripts/categories.js"></script>
-	    
-	    
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <h1>Let Us Hack</h1>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#intro">Home</a>
+                    </li>
+                    <li><a href="#whatIsIt">What is it?</a>
+                    </li>
+                    <li><a href="#whoIsItFor">Who is it for?</a>
+                    </li>
+                    <li><a href="#about">About</a>
+                    </li>
+                    <li><a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Section: intro -->
+    <section id="intro" class="intro">
+
+        <div class="slogan">
+            <h2>Let Us Hack</span> </h2>
+            <h4>Building the community incrementally</h4>
+        </div>
+        <div class="page-scroll">
+            <a href="#whatIsIt" class="btn btn-circle">
+                <i class="fa fa-angle-double-down animated"></i>
+            </a>
+        </div>
+    </section>
+    <!-- /Section: intro -->
+
+    <!-- Section: whatIsIt -->
+    <section id="whatIsIt" class="home-section text-center bg-gray">
+
+        <div class="heading-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="wow bounceInDown" data-wow-delay="0.4s">
+                            <div class="section-heading">
+                                <h2>What is it?</h2>
+                                <div class="page-scroll">
+                                    <a href="#whoIsItFor">
+                                        <i class="fa fa-2x fa-angle-down"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-5">
+                    <hr class="marginbot-50">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 col-md-3">
+                    <div class="wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <img src="img/problem.jpg" alt="" />
+                            </div>
+                            <div class="service-desc">
+                                <h5>Problem</h5>
+                                <p>Everthing starts from a problem - State the problem and how it is impacting you!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <img src="img/idea.jpg" alt="" />
+                            </div>
+                            <div class="service-desc">
+                                <h5>An Idea</h5>
+                                <p>Brainstorm to come up with a solution to blow people's minds!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <img src="img/build.jpg" alt="" />
+                            </div>
+                            <div class="service-desc">
+                                <h5>Build it!</h5>
+                                <p>It ain't true if it ain't built. Create a prototype of your solution to help paint the idea</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <img src="img/future.png" alt="" />
+                            </div>
+                            <div class="service-desc">
+                                <h5>Future</h5>
+                                <p>Where do you see this prototype going towards from here on? Paint the picture and help imagine</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Section: whatIsIt -->
+
+    <!-- Section: whoIsItFor -->
+    <section id="whoIsItFor" class="home-section text-center bg-gray">
+
+        <div class="heading-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="wow bounceInDown" data-wow-delay="0.4s">
+                            <div class="section-heading">
+                                <h2>Who is it for?</h2>
+                                <div class="page-scroll">
+                                    <a href="#about">
+                                        <i class="fa fa-2x fa-angle-down"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-5">
+                    <hr class="marginbot-50">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 col-md-3">
+                    <div class="wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <img src="img/icons/service-icon-1.png" alt="" />
+                            </div>
+                            <div class="service-desc">
+                                <h5>Developers</h5>
+                                <p>Use this as a way of showcasing the world your super amazing software development skills</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <img src="img/icons/service-icon-2.png" alt="" />
+                            </div>
+                            <div class="service-desc">
+                                <h5>Designers</h5>
+                                <p>Users today want a clean interface and you can ensure what the developers build is clean, sleak and beautiful</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <img src="img/icons/service-icon-3.png" alt="" />
+                            </div>
+                            <div class="service-desc">
+                                <h5>Project Managers</h5>
+                                <p>Can you manage all the chaos around this super-cool product to manage build the next best application?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <img src="img/icons/service-icon-4.png" alt="" />
+                            </div>
+                            <div class="service-desc">
+                                <h5>Entrepreneurs</h5>
+                                <p>Do you have an idea? Create a team and build the prototype! We provide the space to showcase your skills in action</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Section: whoIsItFor -->
+
+
+    <!-- Section: about -->
+    <section id="about" class="home-section text-center">
+        <div class="heading-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="wow bounceInDown" data-wow-delay="0.4s">
+                            <div class="section-heading">
+                                <h2>About us</h2>
+                                <div class="page-scroll">
+                                    <a href="#contact">
+                                        <i class="fa fa-2x fa-angle-down"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-5">
+                    <hr class="marginbot-50">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 col-md-3">
+
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="0.5s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <h5>Shrimai 'Moye</h5>
+                                <p class="subtitle">Beauty</p>
+                                <div class="avatar"><img src="img/team/2.jpg" alt="" class="img-responsive img-circle" />
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3">
+                    <div class="wow bounceInUp" data-wow-delay="0.8s">
+                        <div class="team boxed-grey">
+                            <div class="inner">
+                                <h5>Kaushik Chaubal</h5>
+                                <p class="subtitle">Geek</p>
+                                <div class="avatar"><img src="img/team/1.png" alt="" class="img-responsive img-circle" />
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Section: about -->
+
+    <!-- Section: contact -->
+    <section id="contact" class="home-section text-center">
+        <div class="heading-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="wow bounceInDown" data-wow-delay="0.4s">
+                            <div class="section-heading">
+                                <h2>Get in touch</h2>
+                                <i class="fa fa-2x fa-angle-down"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-5">
+                    <hr class="marginbot-50">
+                </div>
+            </div>
+            <div class="row">
+                <ul class="company-social">
+                    <li class="social-facebook"><a href="https://github.com/kaushikchaubal/" target="_blank"><i class="fa fa-github"></i></a>
+                    </li>
+                    <li class="social-twitter"><a href="https://uk.linkedin.com/in/kaushikchaubal" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- /Section: contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="wow shake" data-wow-delay="0.4s">
+                        <div class="page-scroll marginbot-30">
+                            <a href="#intro" id="totop" class="btn btn-circle">
+                                <i class="fa fa-angle-double-up animated"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+
 </body>
+
 </html>
